@@ -1,0 +1,336 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+canvas,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.table-responsive,
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+input,
+select,
+textarea,
+button {
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .charts,
+  .charts-container {
+    width: min(100% - 24px, 760px);
+    margin: 24px auto;
+    padding-left: 0;
+    grid-template-columns: 1fr !important;
+  }
+
+  .frame {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .mission-wrapper,
+  .predictor-form,
+  .train-wrapper,
+  .contact-form {
+    width: min(100% - 24px, 760px) !important;
+    margin: 24px auto !important;
+    padding-left: 0 !important;
+  }
+
+  .main-heading {
+    margin: 32px auto 24px !important;
+    padding: 0 16px;
+    text-align: center;
+    font-size: 2.1rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .chatbot {
+    right: 16px !important;
+    bottom: 86px !important;
+    width: min(92vw, 420px) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .charts,
+  .charts-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 22px !important;
+    width: calc(100% - 92px) !important;
+    margin: 18px 12px 96px 84px !important;
+    padding: 0 !important;
+  }
+
+  .frame {
+    width: 100% !important;
+    height: clamp(260px, 72vw, 330px) !important;
+    min-height: 260px !important;
+    padding: 14px !important;
+    border: 0 !important;
+    outline: 0 !important;
+    outline-offset: 0 !important;
+    background: rgba(255, 255, 255, 0.68) !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .frame canvas {
+    width: 100% !important;
+    height: calc(100% - 42px) !important;
+    max-height: 260px !important;
+  }
+
+  .chart-caption {
+    min-height: 34px;
+    margin-top: 8px !important;
+    font-size: 0.9rem !important;
+    line-height: 1.2 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Reset hard-coded left margins used to account for sidebar. */
+  .mission-wrapper > h1,
+  .main-heading {
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .mission-card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    width: calc(100% - 92px) !important;
+  }
+
+  #mission-card-container {
+    justify-content: center !important;
+    margin-right: 0 !important;
+  }
+
+  /* FAQs grid: single column (the .main > .container accordion grid) */
+  .main > .container {
+    grid-template-columns: 1fr !important;
+    margin-left: 76px !important;
+    width: calc(100% - 92px) !important;
+    max-width: 100% !important;
+  }
+
+  .background {
+    min-height: 100svh;
+    height: auto !important;
+    padding: 72px 18px;
+  }
+
+  .content h1,
+  h1 {
+    font-size: clamp(2.4rem, 13vw, 4rem) !important;
+    letter-spacing: 1px !important;
+    line-height: 1.05;
+  }
+
+  .content p {
+    font-size: 1.15rem !important;
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+
+  .button-54,
+  .btn-predict,
+  .btnContact {
+    width: 100%;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .container {
+    width: min(100% - 24px, 440px) !important;
+    min-height: auto !important;
+    margin: 24px auto;
+    overflow: visible !important;
+  }
+
+  .form-container,
+  .sign-in-container,
+  .sign-up-container,
+  .overlay-container {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .overlay-container {
+    display: none !important;
+  }
+
+  form {
+    min-height: auto !important;
+    padding: 32px 22px !important;
+  }
+
+  .sidebar {
+    width: 76px !important;
+    padding: 10px 8px !important;
+  }
+
+  .sidebar .text,
+  .sidebar .search-box input,
+  .sidebar header .logo-text {
+    display: none !important;
+  }
+
+  .sidebar .icon {
+    min-width: 54px !important;
+  }
+
+  .sidebar header .toggle {
+    display: none !important;
+  }
+
+  .home,
+  .sidebar.close ~ .home {
+    left: 76px !important;
+    width: calc(100% - 76px) !important;
+  }
+
+  .mission-wrapper,
+  .predictor-form,
+  .train-wrapper,
+  .contact-form {
+    width: calc(100% - 92px) !important;
+    margin: 20px 12px 20px 84px !important;
+  }
+
+  .mission-card,
+  .predictor-form,
+  .train-wrapper,
+  .contact-form {
+    padding: 22px 16px !important;
+  }
+
+  .features-grid,
+  .faq-container,
+  .row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-form .row,
+  .contact-form [class*="col-"] {
+    display: block;
+    width: 100%;
+  }
+
+  .form-check {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 64px !important;
+  }
+
+  .home,
+  .sidebar.close ~ .home {
+    left: 64px !important;
+    width: calc(100% - 64px) !important;
+  }
+
+  .mission-wrapper,
+  .predictor-form,
+  .train-wrapper,
+  .contact-form,
+  .charts,
+  .charts-container {
+    width: calc(100% - 76px) !important;
+    margin-left: 70px !important;
+  }
+
+  .main-heading {
+    font-size: 1.75rem !important;
+  }
+
+  .chatbot-toggler {
+    right: 16px !important;
+    bottom: 18px !important;
+    width: 56px !important;
+    height: 56px !important;
+    z-index: 1200 !important;
+    box-shadow: 0 10px 24px rgba(0, 51, 102, 0.35) !important;
+  }
+
+  .chatbot {
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: min(82svh, 680px) !important;
+    border-radius: 22px 22px 0 0 !important;
+    transform-origin: bottom center !important;
+    z-index: 1190 !important;
+  }
+
+  body.show-chatbot .chatbot-toggler {
+    bottom: calc(min(82svh, 680px) + 12px) !important;
+  }
+
+  .chatbot header {
+    padding: 14px 46px 14px 16px !important;
+  }
+
+  .chatbot header h2 {
+    font-size: 1.1rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .chatbot header span {
+    display: block !important;
+  }
+
+  .chatbot .chatbox {
+    height: calc(100% - 118px) !important;
+    padding: 18px 14px 86px !important;
+  }
+
+  .chatbox .chat p {
+    max-width: 82% !important;
+    font-size: 0.92rem !important;
+  }
+
+  .chatbot .chat-input {
+    padding: 10px 14px 14px !important;
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .chat-input textarea {
+    min-height: 48px !important;
+  }
+}
